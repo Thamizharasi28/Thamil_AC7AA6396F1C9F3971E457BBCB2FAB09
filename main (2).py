@@ -1,12 +1,6 @@
-def linearSearchProduct(productList, targetProduct):
-  indices = []
+year = 2003
 
-  for index, product in enumerate(productList):
-    if product == targetProduct:
-      indices.append(index)
-
-  return indices
-products = ["shoes", "boot", "loafer", "shoes", "sandal", "shoes"]
-target = "shoes"
-result = linearSearchProduct(products, target)
-print(result)
+if (year%400 == 0) or (year%4==0 and year%100!=0):
+    print("Leap Year")
+else:
+    print("Not a Leap Year")
